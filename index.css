@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+.person-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.person {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    justify-self: center;
+    box-shadow: 0 0 12px #ccc;
+}
+
+.person__avatar {
+    margin: 0 auto 40px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.person__avatar img {
+    width: 100%;
+    height: 100%;
+    transition: ease-in .3s;
+}
+
+.person__avatar img:hover {
+    transform: scale(1.1);
+}
+
+.person__name {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.person__email {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+}
+
+.more {
+    margin: 40px auto;
+    display: block;
+    width: 200px;
+    height: 40px;
+}
